@@ -1,0 +1,32 @@
+.cabecalho_menu{
+    width: 24px;
+    height: 24px;
+    background-image: url("../assets/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.cabecalho{
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.container_imagem{
+    padding: 1em;
+}
+
+.lista-menu{
+    display: none;
+}
+
+.container_botao:checked ~ .lista-menu{ /*O checked é um pseudo código como se fosse uma   condição, caso o botão esteja preenchido ele vai procurar um elemento anterior com a classe .lista-menu*/
+    display: block;
+}
