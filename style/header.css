@@ -12,6 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative; /*Possibilita colocar outros atrubutos como left, bottom*/
 }
 
 .container{
@@ -25,8 +26,33 @@
 
 .lista-menu{
     display: none;
+    position: absolute; /*Permite que eu movimente o elemento de acordo com o elemento pai ou o que veio antes e que teve o position sem ser estatico*/ 
+    top: 100%;
+    width: 60vw;
 }
 
 .container_botao:checked ~ .lista-menu{ /*O checked é um pseudo código como se fosse uma   condição, caso o botão esteja preenchido ele vai procurar um elemento anterior com a classe .lista-menu*/
     display: block;
+}
+
+.lista-menu_titulo, .lista-menu_item{
+    padding: 1em;
+    background-color: var(--branco); 
+}
+
+.lista-menu_titulo{
+    color: var(--laranja);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.lista-menu_link{    
+    background: var(--azul);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase; /*deixa as letras maiúsculas*/
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
 }
