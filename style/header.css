@@ -35,6 +35,10 @@
     display: block;
 }
 
+.container_botao{
+    display: none;
+}
+
 .lista-menu_titulo, .lista-menu_item{
     padding: 1em;
     background-color: var(--branco); 
@@ -43,16 +47,14 @@
 .lista-menu_titulo{
     color: var(--laranja);
     font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    font-size: 16px;
+    font-weight: 700;
 }
 
 .lista-menu_link{    
-    background: var(--azul);
+    background: var(--azul-gradiente);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-transform: uppercase; /*deixa as letras maiúsculas*/
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
 }
