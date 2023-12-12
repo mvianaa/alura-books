@@ -53,36 +53,100 @@
 
     <section class="carrossel">
         <h2 class="carrossel_titulo">ÚLTIMOS LANÇAMENTOS</h2>
-    </section>
-    <!-- Slider main container -->
-    <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide"><img src="assets/ApacheKafka.svg" alt="Livro sobre  apache Kafka e spring boot da alura books"></div>
-        <div class="swiper-slide"><img src="assets/Liderança.svg" alt="Livro sobre liderança em desing da alura books"></div>
-        <div class="swiper-slide"><img src="assets/Javascript.svg" alt="Livro sobre JavaScript assertivo da alura books"></div>
-        <div class="swiper-slide"><img src="assets/Guia Front-end.svg" alt="Livro Guia Front-End da alura books"></div>
-        <div class="swiper-slide"><img src="assets/Portugol.svg" alt="Livro sobre portuol da alura books"></div>
-        <div class="swiper-slide"><img src="assets/Acessibilidade.svg" alt="Livro sobre acessibilidade da alura books"></div>
-        ...
-        </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-    
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-    
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
-    </div>
+          <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-wrapper">
 
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="assets/ApacheKafka.svg" alt="Livro sobre  apache Kafka e spring boot da alura books"></div>
+            <div class="swiper-slide"><img src="assets/Liderança.svg" alt="Livro sobre liderança em desing da alura books"></div>
+            <div class="swiper-slide"><img src="assets/Javascript.svg" alt="Livro sobre JavaScript assertivo da alura books"></div>
+            <div class="swiper-slide"><img src="assets/Guia Front-end.svg" alt="Livro Guia Front-End da alura books"></div>
+            <div class="swiper-slide"><img src="assets/Portugol.svg" alt="Livro sobre portuol da alura books"></div>
+            <div class="swiper-slide"><img src="assets/Acessibilidade.svg" alt="Livro sobre acessibilidade da alura books"></div>
+            </div>
+            
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> 
+        </div>
+
+        <div class="card">
+            <div class="card_descricao">
+                <div class="descricao">
+                    <h3 class="descricao_titulo">Talvez você também se interesse por...</h3>
+                    <h2 class="descricao_titulo-livro">Angular 11 e Firebase</h2>
+                    <p class="descricao_texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                </div>
+                <img src="assets/Angular.svg" alt="Livro sobre Angular 11 e Firebase da akura books" class="descricao_imagem">
+            </div>
+
+            <div class="card_botoes">
+                <ul class="botoes">
+                    <li class="botoes_item"><img src="assets/Favoritos.svg" alt="Favoritar livro"></li>
+                    <li class="botoes_item"><img src="assets/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+                </ul>
+                <a href="#" class="botoes_ancora">Saiba mais</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel_titulo">Mais Vendidos</h2>
+          <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-wrapper">
+
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="assets/Javascript.svg" alt="Livro sobre JavaScript assertivo da alura books"></div>
+            <div class="swiper-slide"><img src="assets/ApacheKafka.svg" alt="Livro sobre  apache Kafka e spring boot da alura books"></div>
+            <div class="swiper-slide"><img src="assets/Liderança.svg" alt="Livro sobre liderança em desing da alura books"></div>
+            <div class="swiper-slide"><img src="assets/Guia Front-end.svg" alt="Livro Guia Front-End da alura books"></div>
+            <div class="swiper-slide"><img src="assets/Portugol.svg" alt="Livro sobre portuol da alura books"></div>
+            <div class="swiper-slide"><img src="assets/Acessibilidade.svg" alt="Livro sobre acessibilidade da alura books"></div>
+            </div>
+            
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> 
+        </div>
+
+        <div class="card">
+            <div class="card_descricao">
+                <div class="descricao">
+                    <h3 class="descricao_titulo">Autora do Mês</h3>
+                    <h2 class="descricao_titulo-livro">Juliana Agarikov</h2>
+                    <p class="descricao_texto">Analista de sistemas e escritora, Juliana é especialista em Front-End. </p>
+                </div>
+                <img src="assets/Escritora.svg" alt="Livro sobre Angular 11 e Firebase da akura books" class="descricao_imagem">
+            </div>
+
+            <div class="card_botoes">
+                <ul class="botoes">
+                    <li class="botoes_item"><img src="assets/Favoritos.svg" alt="Favoritar livro"></li>
+                    <li class="botoes_item"><img src="assets/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+                </ul>
+                <a href="#" class="botoes_ancora">Saiba mais</a>
+            </div>
+        </div>
+
+    </section>
+  
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> <!--Fica sempre ao final antes de todos os elementos e antes do fechamento do body-->
     <script> const swiper = new Swiper('.swiper', {
         // speed: 400, O speed seria a velocidade com q os slides seriam trocados (automaticamente)
         spaceBetween: 10,
         slidesPerView: 3, // Quantos slides aparecem para visualização
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets'
+        },
       });</script>
 </body>
 </html>
