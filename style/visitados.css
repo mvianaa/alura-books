@@ -1,0 +1,30 @@
+.visitados{
+    background: var(--azul-gradiente);
+    color: var(--branco);
+    text-align: center;
+    padding: 1.5em 0;
+}
+
+.visitados_titulo{
+    font-weight: 300;
+    margin-bottom: 1em;
+}
+
+.visitados_topicos{
+    display: flex;
+    flex-wrap: wrap; /*Utilizado para a quebra de linha ao final da tela*/
+    justify-content: center;
+}
+
+.visitados_item{
+    margin: 2em 0.5em;
+}
+
+.visitados_link{
+    background-color: var(--laranja);
+    color: var(--branco);
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 1em;
+}

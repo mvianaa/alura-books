@@ -35,6 +35,10 @@
     margin-bottom: 0.5em;
 }
 
+.favorito_descricao{
+    margin-bottom: 1.5em;
+}
+
 .descricao_titulo{
     color: var(--laranja);
     font-weight: 700;
@@ -54,6 +58,7 @@
 .card_botoes{
     display: flex;
     justify-content: space-between;
+    margin-top: 2em;
 }
 
 .botoes{
